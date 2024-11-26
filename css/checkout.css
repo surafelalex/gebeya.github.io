@@ -1,0 +1,262 @@
+main{
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins";
+    background-color: #f2f2f2;
+    width:100%;
+    height: 1800px;
+    padding-top: 20px;
+    padding-left: 40px;
+    gap: 30px;
+}
+.simple-scroll{
+    margin-bottom: 30px;
+}
+main .simple-scroll ul{
+     display: flex;
+     flex-direction: row;
+     gap: 10px;
+
+}
+main .simple-scroll li{
+    list-style-type: none;
+}
+main .simple-scroll i{
+   font-size: 15px;
+}
+main .one{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    width: 95%;
+    height: 47%;
+}
+main .one .product-more-detail{
+    width: 60%;
+    font-size: 1.25rem;
+    border-radius: 15px;
+    height: 100%;
+    background: white;
+}
+main .one .order-summary{
+   width: 40%;
+   height: 70%;
+   background: white;
+   border-radius: 10px;
+}
+
+
+
+.order-summary {
+  border: 1px solid #e0e0e0;
+  padding: 5px;
+  font-size: 1.25rem;
+  width: 300px; /* Adjust as needed */
+  float: right; /* Position to the right */
+}
+
+.order-summary h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.order-item {
+  margin-bottom: 70px;
+  margin-top: 20px;
+}
+.order-summary p{
+  margin-left: 10px;
+}
+.order-summary div{
+  margin-left: 10px;
+}
+
+.order-item img { /* Style the product image */
+  width: 20%; /* Adjust image size as needed */
+  background: #f2f2f2;
+  height: auto;
+  margin-right: 10px;
+  float:left;
+  border-radius: 10px;
+}
+
+.order-item-details {
+  /* Style for details, aligns text vertically */
+  display: flex;
+  flex-direction: column; /* Arrange details vertically */
+  justify-content: space-between; /* Distribute space evenly */
+  height: 50px; /* Adjust height to match image */
+}
+
+.order-item-details p { /* Details p tags */
+  margin: 0; /* Remove default margin for better alignment */
+}
+
+.order-total {
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.order-summary .place-order {
+  background-color: #ffa500; /* Orange button color */
+  color: white;
+  font-size: 1.25rem;
+  width: 70%;
+  height: 50px;
+  border-radius: 5px;
+  margin-top: 25px;
+  margin-left: 70px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+.order-summary .price1{
+    margin-left: 375px;
+}
+.order-summary .price2{
+    margin-left: 372px;
+}
+.order-summary .price3{
+    margin-left: 426px;
+}
+.order-summary .price4{
+    margin-left: 400px;
+}
+
+.order-summary .space{
+  height: 30px;
+}
+ 
+
+
+
+main .one .product-more-detail h2 {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+main .one .product-more-detail .container {
+    width: 93%; /* Adjust as needed */
+    margin-left: 40px;
+    margin-top: 50px;
+  }
+  
+
+  
+  label {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  main .one .product-more-detail .container h2 {
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+  
+  main .one .product-more-detail .container input[type="text"],
+  main .one .product-more-detail .container input[type="number"] {
+    font-size: 1.25rem;
+    width: 90%;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  
+  main .one .product-more-detail .container select{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-left: 15px;
+    width: 200px;
+    height: 50px;
+  }
+ 
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /*Distribute space between elements*/
+    margin-bottom: 10px;
+  }
+  .row > div {
+    flex: 1; /*Allows elements to take equal space*/
+  }
+  
+  .row div div{
+    display: flex;
+    flex-direction: row;
+    gap: 450px;
+  }
+  
+  .payment-container{
+    width: 55%;
+    height: 40%;
+    background-color: white;
+    font-size: 1.25rem;
+
+}
+.payment-container h2{
+  margin-top: 20px;
+  margin-left: 24px;
+  margin-bottom: 20px;
+
+
+}
+.payment-options{
+  padding-left: 25px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.payment-option{
+  width: 30%;
+  height: 150px;
+  border: 0.25px solid black ;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  align-items: center;
+  gap: 10px;
+}
+ .active{
+  background-color: #ffa500;
+}
+.payment-option img{
+  max-width: 50px ;
+  max-height: 30px;
+}
+
+#name-on-card,#card-number{
+  height: 45px;
+}
+
+.payment-container #card-details{
+  margin-left: 30px;
+}
+.payment-container #card-details input{
+  width: 98%;
+  border-radius: 5px;
+  border:  1px solid #333;
+}
+
+.payment-container #card-details input ::placeholder{
+  font-size: 1.25rem;
+}
+
+ #expiry-mm,#expiry-yyyy,#cvv{
+  border: 1px solid #333;
+  width: 32%;
+  height: 40px;
+  border-radius: 10px;
+}
+
+  
+footer{
+    margin-top: 0px;
+}
+
+

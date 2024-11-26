@@ -1,0 +1,512 @@
+
+
+main {
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+  }
+  /* MAIN */
+  .hero {
+      position: relative;
+      font-family: "Alfa Slab One";
+      background-color: #882BEC; /* Purple background color from image */
+      height: 769px; /* Ensure it takes up remaining viewport height */
+      width: 1512px;
+    }
+  .hero h1{
+    font-family: 'Alfa Slab One'; /* Example font from your imports */
+    font-size: 6em;
+    color: white;
+  }
+  .hero__GEBEYA{
+    position: absolute;
+    top: 193px; 
+    left: 80px; 
+    width: 497px;
+    height: 175px;
+    /* White text on purple background */
+  
+  }
+  .hero__p{
+      font-family: "Poppins";
+      font-size: 1.2em;
+      color: white;
+      margin-bottom: 30px;
+      line-height: 1.5;
+      position: absolute;
+      top: 206px;
+      left: 997px;
+       
+       
+  }  
+  .hero__bg__img1,.hero__bg__img2,.hero__bg__img3{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .hero__bg__img1{
+    background-image: url("../img/person.jpg");
+    position: absolute;
+    top: 168px; 
+    left: 606px; 
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+  }
+  .hero__bg__img2{
+    background-image: url("../img/shoee.jpeg");
+    width: 260px;
+    height: 260px;
+    border-radius: 260px;
+    position: absolute;
+    top: 448px; 
+    left: 188px; 
+  }
+  .hero__bg__img3{
+    background-image: url("../img/shirt.jpeg");
+    width: 223px;
+    height: 223px;
+    border-radius: 223px;
+    position: absolute;
+    left: 1057px; 
+    top: 520px; 
+  }
+  
+  .hero__btn {
+    background-color: #FEA301; /* Orange button color */
+   width: 366px;
+   height: 66px;
+    color: #000;
+    padding: 15px 30px;
+    border: none;
+    font-family: "poppins";
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    position: absolute;
+    top: 618px; 
+    left: 573px; 
+  }
+  
+  .hero__btn:hover {
+      background-color: #ffb347; /* Darker orange on hover */
+  }
+  .hero__SHOP{
+    position: absolute;
+    top: 366px; 
+    left: 1007px; 
+    width: 390px;
+    height: 175px;
+
+  }
+
+
+  /* Another section */
+.latest-collections{
+  margin-top: 100px;
+}
+.latest-collections__title{
+  margin-left: 40px;
+  margin-bottom: 30px;
+}
+
+.latest-collections__carousel{
+  display: flex;
+  justify-content: center;
+  gap: clamp(1vh,20px,2vh);
+  font-family: "poppins";
+}
+.latest-collections__product{
+  width: 25rem;
+  height: 25rem;
+  border: 1px solid #000;
+    display: flex;
+  flex-direction: row;
+  padding: 10px 10px 170px 10px; 
+  border-radius: 20px;
+/* top right bottom left */
+
+}
+.product-card {
+  background-color: #F2F2F2;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.div1 {
+  display: flex;
+  flex-direction: row;
+}
+.div2{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.div3{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.div4{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.product-card .div1 .product-card__img{
+   margin-left: 80px;
+   width: 200px;
+   height: 200px;
+
+}
+.product-card .div1 i{
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.product-card .rating span{
+  color: yellow;
+}
+.product-card .product-card__btn{
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #FEA301;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+/* another section  */
+.collection{
+  font-family: "poppins";
+  margin-top: 40px;
+  margin-left: 150px;
+}
+.collections_categories{
+  display: flex;
+  flex-direction: row;
+  gap: 65px;
+}
+.collections_categories .items{
+  
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid #000;
+  display: flex;
+  place-content: center;
+}
+.collections_categories .items p{
+  place-content: center;
+}
+
+/* || */
+.detail-items{
+  display: flex;
+  font-family: "poppins";
+  flex-direction: column;
+  margin-left: 150px;
+  margin-top: 50px;
+  width: 81%;
+  gap: 40px;
+}
+.detail-item_collections-1{
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.detail-item{
+  /* top right bottom left */
+  height: 100%;
+  width: 15%;
+  border-radius: 20px;
+  border: 0.05px solid #000;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+}
+.detail-item .image-wrapper{
+  margin: 20px;
+  background-color: #F2F2F2;
+  border-radius: 20px;
+  display: flex;
+  place-content: center;
+}
+.detail-item img{
+  height: 100px;
+  width: 50%;
+}
+.detail-item_collections-2{
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;}
+  .detail-item h2{
+    text-align: center;
+    font-size: 3vh;
+  }
+  .detail-item p{
+    text-align: center;
+    font-size: 2.25vh;
+  }
+  .detail-items_btn{
+    background-color: #882BEC;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    padding: 15px 20px 0px 50px;/* top right bottom left */
+    gap: 5px;
+    color: #ddd;
+    font-weight: bold;
+    margin-left: 350px;
+    gap:10px ;  
+}
+
+/* || */
+.banner {
+
+  display: flex;
+  justify-content: center;
+  font-family: "poppins";
+  color: white;
+  margin-top: 150px;
+}
+
+.content {
+  background-image: url("../img/summer_advert.png"); /* Replace with your actual image URL */
+  background-color: #ccc;
+  background-size: cover;
+  background-position: center;
+  width: 1000px;
+  border-radius: 15px;
+  height: 400px; /* Adjust as needed */
+
+ 
+}
+
+.content h1 {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.content p {
+  margin-top: 20px;
+  margin-left: 20px
+ 
+}
+
+.content button {
+  margin-top: 70px;
+  margin-left: 20px;
+  width: 270px;
+  height: 60px;
+  background-color:#FEA301 ;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.25rem;
+  border-radius: 10px;
+}
+.browse__by__category{
+  margin-left: 200px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.product_categories{
+  font-family: "Poppins";
+  display: flex;
+  gap: 30px;
+  flex-direction: row;
+  width: 1000px;
+  height: 220px;
+  margin-left: 210px;
+  
+}
+.product_category{
+  width: 25%;
+
+}
+.product_category img{
+  background-color: #F2F2F2;
+  width: 150px;
+  border-radius: 10px;
+  height: 70%;
+  margin-bottom: 10px;
+  margin:10px auto 10px auto;
+}
+.product_category h2{
+  text-align: center;
+}
+.product_category p{
+  font-weight: lighter;
+  text-align: center;
+
+}
+
+footer{
+  background: #882BEC;
+  font-family: "Poppins";
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  margin-top: 200px;
+}
+.description{
+  margin-top: 100px;
+  margin-left: 100px;
+
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.description img{
+  margin-right: 800px;
+  
+}
+.description p{
+ font-weight:200;  
+}
+.social_medias{
+  margin-top: 40px;
+  margin-left: 130px;
+  margin-right: 800px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+
+    /* Header Adjustments */
+    .header {
+        flex-direction: column; /* Stack header elements vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+    .header__ul{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header__nav, .header__searchbar, .header__language, .cart {
+        width: 100%; /* Make elements full width */
+        margin-bottom: 10px; /* Add spacing between elements */
+    }
+
+    .header__searchbar {
+        flex-direction: column; /* Stack search elements vertically */
+    }
+
+    .header__searchbar__input {
+        width: 100%; /* Full width input */
+    }
+
+    .dropdown-content{
+        top: 40px;
+        left: 0;
+    }
+
+    /* Hero Section Adjustments */
+    .hero {
+        height: auto; /* Remove fixed height */
+    }
+    .hero__GEBEYA{
+        position: static;
+        width: 100%;
+        text-align: center;
+    }
+    .hero__SHOP{
+        position: static;
+        text-align: center;
+        width: 100%;
+    }
+    .hero__p{
+        text-align: center;
+        position: static;
+    }
+    .hero__bg__img1, .hero__bg__img2, .hero__bg__img3{
+        display: none; /* Hide images on smaller screens */
+    }
+    .hero__btn{
+        margin: 10px auto;
+        width: 80%;
+    }
+
+
+    /* Latest Collections Adjustments */
+    .latest-collections__carousel {
+        flex-direction: column; /* Stack products vertically */
+        width: 100%;
+    }
+
+    .latest-collections__product {
+        width: 100%; /* Products take full width */
+        margin-bottom: 10px; /* Add spacing */
+        padding: 20px; /* Adjust padding for better mobile view */
+        flex-direction: column;
+        
+    }
+    .product-card .div1 .product-card__img{
+        margin-left: auto;
+        margin-right: auto;
+
+       
+    }
+    .product-card__btn{
+      width: 100%;
+    }
+
+    .collections_categories{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .collections_categories .items{
+        width: 100%;
+    }
+
+
+    /* Other sections will need similar adjustments.  Example: */
+    .detail-item_collections-1, .detail-item_collections-2 {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .detail-item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .detail-items_btn{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .product_categories{
+        flex-direction: column;
+    }
+    .product_category{
+        width: 100%;
+    }
+
+    .description{
+        flex-direction: column;
+    }
+
+    .description img{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .social_medias{
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: center;
+    }
+
+}

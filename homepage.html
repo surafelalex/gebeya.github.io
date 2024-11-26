@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Navigation with Dropdowns</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/common.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <img src="icons/image-removebg-preview 1.png" alt="" >
+            <ul class="header__ul">
+                <li class="dropdown">
+                    <div class="header__registration"><i class="material-icons">person</i><a href="#">Register/Sign In</a><img class="img2" src="icons/down.png" alt=""></div>
+                    <div class="dropdown-content content1">
+                        <a href="#">Register</a>
+                        <a href="#"><span>Sign In</span></a>
+                    </div>
+                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li class="dropdown">
+                    <div class="header__registration"><a href="#">More</a><img class="img_more" src="icons/down.png" alt=""></div>
+                    <div class="dropdown-content">
+                        <a class="dropdown-item" href="#">Perfumes</a>
+                        <a class="dropdown-item" href="#">Jewelries</a>
+                        <a class="dropdown-item" href="#">Gym wears</a>
+                        <a class="dropdown-item" href="#">Vintage wears</a>
+                        <a class="dropdown-item" href="#">Sport wear</a>
+                        <a class="dropdown-item" href="#">Pyjamas</a>
+                        <a class="dropdown-item" href="#">Slippers</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="search-bar header__searchbar">
+            <input class="header__searchbar__input" type="text" placeholder="Search" > <button class="header__searchbar__btn" type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="header__language dropdown language-currency">
+            <a href="#">
+                <img src="icons/uk.png" alt="United Kingdom"> EN/Currency
+            </a>
+        </div>
+        <div class="cart">
+            <img src="icons/Frame 24.png" alt=""><p>2</p>
+       </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero__GEBEYA"><h1>Gebeya</h1></div>
+            <div class="hero__bg__img1"></div>
+            <p class="hero__p">Discover a world of convenience with our <br> user-friendly platform, curaated <br> collections, and exceptional customer <br> service</p>
+            <div class="hero__bg__img2"></div>
+            <h1 class="hero__SHOP h1">SHOP</h1>
+            <button class="hero__btn">Explore Now</button>
+            <div class="hero__bg__img3"></div>
+        </section>
+        <section class="latest-collections">
+            <h2 class="latest-collections__title">Latest Collections</h2>
+            <div class="latest-collections__carousel">
+                <div class="latest-collections__product">
+                    <!-- Product Card Component (repeatable) -->
+                    <div class="product-card">
+                        <div class="div1"> 
+                            <i class="fa fa-heart-o"></i> 
+                            <img class="product-card__img" src="img/french_kiss_bag.png">
+                            <p>In Stock</p>
+                        </div>
+                        <div class="div2"> 
+                        <p class="women">Women</p>
+                        <p class="rating"><span class="fa fa-star"></span>2K+ rating</p>
+                        </div> 
+                        <div class="div3">
+                            <h3 class="product-card__h3">French Kiss Bag</h3>
+                        <p  class="product-card__p">ALDO</p>
+                        </div>
+                        <div class="div4">
+                            <p class="price">$500</p>
+                        <button class="product-card__btn add-to-cart" data-product-id="1" data-product-name="French Kiss Bag" data-product-price="500">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="latest-collections__product">
+                    <!-- Product Card Component (repeatable) -->
+                    <div class="product-card">
+                        <div class="div1"> 
+                            <i class="fa fa-heart-o"></i> 
+                            <img class="product-card__img" src="img/Burberry_Shine.png">
+                            <p>In Stock</p>
+                        </div>
+                        <div class="div2"> 
+                        <p class="women">Women</p>
+                        <p class="rating"><span class="fa fa-star"></span>2K+ rating</p>
+                        </div> 
+                        <div class="div3">
+                            <h3 class="product-card__h3">French Kiss Bag</h3>
+                        <p  class="product-card__p">ALDO</p>
+                        </div>
+                        <div class="div4">
+                            <p class="price">$500</p>
+                        <button class="product-card__btn add-to-cart" data-product-id="1" data-product-name="French Kiss Bag" data-product-price="500">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="latest-collections__product">
+                    <!-- Product Card Component (repeatable) -->
+                    <div class="product-card">
+                        <div class="div1"> 
+                            <i class="fa fa-heart-o"></i> 
+                            <img class="product-card__img" src="img/Alvero_Gown.png">
+                            <p>In Stock</p>
+                        </div>
+                        <div class="div2"> 
+                        <p class="women">Women</p>
+                        <p class="rating"><span class="fa fa-star"></span>2K+ rating</p>
+                        </div> 
+                        <div class="div3">
+                            <h3 class="product-card__h3">French Kiss Bag</h3>
+                        <p  class="product-card__p">ALDO</p>
+                        </div>
+                        <div class="div4">
+                            <p class="price">$500</p>
+                            <button class="product-card__btn add-to-cart" data-product-id="1" data-product-name="French Kiss Bag" data-product-price="500">Add to Cart</button>                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="collection">
+            <div class="collections_categories">
+                <div class="items"><p>Men</p></div>
+                <div class="items"><p>Women</p></div>
+                <div class="items"><p>Kids</p></div>
+                <div class="items"><p>Perfumes</p></div>
+                <div class="items"><p>Sport</p></div>
+                <div class="items"><p>Jewelry</p></div>
+            </div>
+        </section>
+        <section class="detail-items">
+            <div class="detail-item_collections-1">
+                <div class="detail-item">
+                    <div class="image-wrapper"> <img src="img/shoe.png" alt=""> </div>
+                    <h2>Shoes</h2>
+                    <p>see all collections</p>
+                </div>
+                <div class="detail-item">
+                    <div class="image-wrapper"> <img src="img/Bag.png" alt=""> </div>
+                    <h2>Shoes</h2>
+                    <p>see all collections</p>
+                </div>
+                <div class="detail-item">
+                    <div class="image-wrapper"> <img src="img/Jacket.webp" alt=""> </div>
+                    <h2>Shoes</h2>
+                    <p>see all collections</p>
+                </div>
+                <div class="detail-item">
+                    <div class="image-wrapper"> <img src="img/lingrae.png" alt=""> </div>
+                    <h2>Shoes</h2>
+                    <p>see all collections</p>
+                </div>
+                <div class="detail-item">
+                    <div class="image-wrapper"> <img src="img/Belts.png" alt=""> </div>
+                    <h2>Shoes</h2>
+                    <p>see all collections</p>
+                </div>
+                <div class="detail-item">
+                    <div class="image-wrapper"> <img src="img/street_wear.png" alt=""> </div>
+                    <h2>Shoes</h2>
+                    <p>see all collections</p>
+                </div>
+            </div>
+            <div class="detail-item_collections-2">
+                <div class="detail-item">
+                    <div class="image-wrapper"> <img src="img/sunglasses.webp" alt=""> </div>
+                    <h2>Shoes</h2>
+                    <p>see all collections</p>
+                </div>
+                <div class="detail-item">
+                    <div class="image-wrapper"> <img src="img/sun_wear.webp" alt=""> </div>
+                    <h2>Shoes</h2>
+                    <p>see all collections</p>
+                </div>
+                <div class="detail-item">
+                    <div class="image-wrapper"> <img src="img/hat.png" alt=""> </div>
+                    <h2>Shoes</h2>
+                    <p>see all collections</p>
+                </div>
+                <div class="detail-item">
+                    <div class="image-wrapper"> <img src="img/slippers.png" alt=""> </div>
+                    <h2>Shoes</h2>
+                    <p>see all collections</p>
+                </div>
+                <div class="detail-item">
+                    <div class="image-wrapper"> <img src="img/wigs.webp" alt=""> </div>
+                    <h2>Shoes</h2>
+                    <p>see all collections</p>
+                </div>
+                <div class="detail-item">
+                    <div class="image-wrapper"> <img src="img/costmetics.png" alt=""> </div>
+                    <h2>Shoes</h2>
+                    <p>see all collections</p>
+                </div>
+            </div>
+            <button class="detail-items_btn">see more <img src="icons/arrow.png" alt=""></button>
+        </section>
+        <section>
+            <div class="banner">
+                <div class="content">
+                  <h1>Our Curated Summer <br> Collection</h1>
+                  <p>Explore our curated summer collection <br> featuring trending styles, vibrant colors and <br> lightweight fabrics perfect for long days and <br> nights.</p>
+                  <button>Explore Now</button>
+                </div>
+              </div>
+        </section>
+
+        <h1 class="browse__by__category">Browse by category</h1>
+    <section>
+   <div class="product_categories">
+    <div class="product_category">
+        <img src="img/casual_shirt.png" alt="">
+        <h2>Casual wear</h2>
+        <p>Over 24 categories in stock</p>
+    </div>
+    <div class="product_category">
+        <img src="img/vintage_dress.png" alt="">
+        <h2>Vintage</h2>
+        <p>Over 24 categories in stock</p>
+    </div>
+    <div class="product_category">
+        <img src="img/beauty_products.png" alt="">
+        <h2>Beauty products</h2>
+        <p>Over 24 categories in stock</p>
+    </div>
+    <div class="product_category">
+        <img src="img/gym_wears.webp" alt="">
+        <h2>Gym wears</h2>
+        <p>Over 24 categories in stock</p>
+    </div>
+   </div>
+</section>
+
+<footer>
+    <div class="description">
+        <img src="icons/Group.png" alt="">
+        <div class="about">
+            <h3>About</h3>
+            <p>About us</p>
+            <p>News & Blogs</p>
+            <p>Location</p>
+        </div>
+        <div class="products">
+            <h3>Products</h3>
+            <p>Pricing</p>
+            <p>Store</p>
+            <p>Features</p>
+        </div>
+        <div class="discover">
+            <h3>Discover</h3>
+            <p>Contact Us</p>
+            <p>Customers</p>
+            <p>Affilates</p>
+        </div>
+    </div>
+    <div class="social_medias">
+        <img src="icons/insta.png" alt="">
+        <img src="icons/whatsapp.png" alt="">
+        <img src="icons/x.png" alt="">
+    </div>
+</footer>
+    </main>
+   <script>
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        const addToCartButtons = document.querySelectorAll('.product-card__btn.add-to-cart');
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const productId = button.dataset.productId;
+                const productName = button.dataset.productName;
+                const productPrice = button.dataset.productPrice;
+
+                const existingProductIndex = cart.findIndex(item => item.id === productId);
+
+                if (existingProductIndex > -1) {
+                    cart[existingProductIndex].quantity++;
+                } else {
+                    cart.push({ id: productId, name: productName, price: productPrice, quantity: 1 });
+                }
+
+                localStorage.setItem('cart', JSON.stringify(cart));
+
+                const cartCountElement = document.querySelector('.cart p');
+                cartCountElement.textContent = cart.reduce((total, item) => total + item.quantity, 0);
+
+                alert(`${productName} added to cart!`);
+            });
+        });
+    </script>
+</body>
+</html>

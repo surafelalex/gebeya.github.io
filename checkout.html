@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Navigation with Dropdowns</title>
+   <link rel="stylesheet" href="css/common.css">
+   <link rel="stylesheet" href="css/checkout.css">
+
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <img src="icons/image-removebg-preview 1.png" alt="" >
+            <ul class="header__ul">
+                <li class="dropdown">
+                    <div class="header__registration"><i class="material-icons">person</i><a href="#">Register/Sign In</a><img class="img2" src="icons/down.png" alt=""></div>
+                    <div class="dropdown-content content1">
+                        <a href="#">Register</a>
+                        <a href="#"><span>Sign In</span></a>
+                    </div>
+                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li class="dropdown">
+                    <div class="header__registration"><a href="#">More</a><img class="img_more" src="icons/down.png" alt=""></div>
+                    <div class="dropdown-content">
+                        <a class="dropdown-item" href="#">Perfumes</a>
+                        <a class="dropdown-item" href="#">Jewelries</a>
+                        <a class="dropdown-item" href="#">Gym wears</a>
+                        <a class="dropdown-item" href="#">Vintage wears</a>
+                        <a class="dropdown-item" href="#">Sport wear</a>
+                        <a class="dropdown-item" href="#">Pyjamas</a>
+                        <a class="dropdown-item" href="#">Slippers</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="search-bar header__searchbar">
+            <input class="header__searchbar__input" type="text" placeholder="Search" > <button class="header__searchbar__btn" type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="header__language dropdown language-currency">
+            <a href="#">
+                <img src="icons/uk.png" alt="United Kingdom"> EN/Currency
+            </a>
+        </div>
+        <div class="cart">
+             <img src="icons/Frame 24.png" alt=""><p>2</p>
+        </div>
+    </header>
+
+
+
+    <main>
+        <div class="one">
+        <div class="product-more-detail">
+            <h2>Shipping Address</h2>
+            <div class="container">              
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="First & Last Name">
+              
+                <label for="address1">Address 1</label>
+                <input type="text" id="address1" placeholder="Street Address">
+              
+                <label for="address2">Address 2</label>
+                <input type="text" id="address2" placeholder="Apartment, suite, etc.">
+              
+                <div class="row">
+                  <div>
+                    <label for="city">City</label>
+                    <input type="text" id="city" placeholder="Enter City">
+                  </div>
+                  <div>
+                    <label for="state">State</label>
+                    <select id="state">
+                      <option value="">Select State</option>
+                      <!-- Add state options here -->
+                    </select>
+                  </div>
+                  <div>
+                    <label for="zip">Zip</label>
+                    <input type="text" id="zip" placeholder="Zip code">
+                  </div>
+                </div>
+                            
+              
+              </div>
+        </div>
+            <div class="order-summary">
+                <h2>Order Summary</h2>
+                <hr>
+                <div class="order-item">
+                  <img src="img/Burberry_Shine.png" alt="Burberry Shine">  <!-- Replace with actual image URL -->
+                  <div class="order-item-details">
+                    <p>Burberry shine</p>
+                    <p>FENDI</p>
+                  </div>
+                </div>
+                <p>Subtotal <span class="price1">$150</span></p>
+                <p>Shipping <span class="price2">$10</span></p>
+                <p>Tax <span class="price3">$5</span></p>
+                <div class="space"></div>
+               <hr>
+                <div class="order-total">
+                  Total <span class="price4">$165</span>
+                </div>
+                 
+                <button class="place-order">Place order</button>
+              </div>
+        </div>
+            
+            <div class="payment-container">
+                <h2>Payment method</h2>
+              
+                <div class="payment-options">
+                  <div class="payment-option active" id="card-option">
+                    <img src="icons/card.png" alt="">
+                    <p>card</p>
+                
+                  </div>
+                  <div class="payment-option" id="wallet-option">
+                    <img src="icons/wallet.png" alt="">
+                    <p>wallet</p>
+                  </div>
+                  <div class="payment-option" id="bank-option">
+                    <img src="icons/bank.png" alt="">
+                    <p>Bank transfer</p>
+                  </div>
+                </div>
+              
+                <div id="card-details">
+                  <label for="name-on-card">Name on card</label>
+                  <input type="text" id="name-on-card" placeholder="First & Last Name">
+              
+                  <label for="card-number">Card number</label>
+                  <input type="text" id="card-number" placeholder="0000 0000 0000 0000">
+              
+                  <div class="row">
+                    <div>
+                      <div><label for="expiry">Expiry</label>
+                        <label for="cvv">CVV</label></div>
+                      <select id="expiry-mm">
+                        <option value="">MM</option>
+                      </select>
+                      <select id="expiry-yyyy">
+                        <option value="">YYYY</option>
+                      </select>                        <select id="cvv">
+                        <option value="">CVV</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              
+                <!-- Add other payment method details as needed (for wallet/bank transfer) -->
+                <div id="wallet-details" style="display:none;">
+                  <h3>Wallet Payment Details</h3>
+                  </div>
+                <div id="bank-details" style="display:none;">
+                  <h3>Bank Transfer Details</h3>
+                  </div>
+                  <div id="success-message" style="display:none;">
+                    <h2>Order Placed Successfully!</h2>
+                    <p>Thank you for your order. You will receive a confirmation email shortly.</p>
+                </div>
+              </div>
+        
+    </main>
+
+
+
+    <footer>
+        <div class="description">
+            <img src="icons/Group.png" alt="">
+            <div class="about">
+                <h3>About</h3>
+                <p>About us</p>
+                <p>News & Blogs</p>
+                <p>Location</p>
+            </div>
+            <div class="products">
+                <h3>Products</h3>
+                <p>Pricing</p>
+                <p>Store</p>
+                <p>Features</p>
+            </div>
+            <div class="discover">
+                <h3>Discover</h3>
+                <p>Contact Us</p>
+                <p>Customers</p>
+                <p>Affilates</p>
+            </div>
+        </div>
+        <div class="social_medias">
+            <img src="icons/insta.png" alt="">
+            <img src="icons/whatsapp.png" alt="">
+            <img src="icons/x.png" alt="">
+        </div>
+    </footer>
+    <script>
+      const placeOrderButton = document.querySelector('.place-order');
+      const successMessage = document.getElementById('success-message');
+
+      placeOrderButton.addEventListener('click', () => {
+          setTimeout(() => {
+              successMessage.style.display = 'block';
+
+              setTimeout(() => {
+                  window.location.href = 'thankyou.html'; 
+              }, 3000); 
+          }, 1000); 
+      });
+
+      const paymentOptions = document.querySelectorAll('.payment-option');
+      const cardDetails = document.getElementById('card-details');
+      const walletDetails = document.getElementById('wallet-details');
+      const bankDetails = document.getElementById('bank-details');
+
+      paymentOptions.forEach(option => {
+          option.addEventListener('click', () => {
+              paymentOptions.forEach(o => o.classList.remove('active'));
+              option.classList.add('active');
+              
+              cardDetails.style.display = option.id === 'card-option' ? 'block' : 'none';
+              walletDetails.style.display = option.id === 'wallet-option' ? 'block' : 'none';
+              bankDetails.style.display = option.id === 'bank-option' ? 'block' : 'none';
+          });
+      });
+  </script>
+</body>

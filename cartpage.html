@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Navigation with Dropdowns</title>
+   <link rel="stylesheet" href="css/common.css">
+   <link rel="stylesheet" href="css/cartpage.css">
+
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <img src="icons/image-removebg-preview 1.png" alt="" >
+            <ul class="header__ul">
+                <li class="dropdown">
+                    <div class="header__registration"><i class="material-icons">person</i><a href="#">Register/Sign In</a><img class="img2" src="icons/down.png" alt=""></div>
+                    <div class="dropdown-content content1">
+                        <a href="#">Register</a>
+                        <a href="#"><span>Sign In</span></a>
+                    </div>
+                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li class="dropdown">
+                    <div class="header__registration"><a href="#">More</a><img class="img_more" src="icons/down.png" alt=""></div>
+                    <div class="dropdown-content">
+                        <a class="dropdown-item" href="#">Perfumes</a>
+                        <a class="dropdown-item" href="#">Jewelries</a>
+                        <a class="dropdown-item" href="#">Gym wears</a>
+                        <a class="dropdown-item" href="#">Vintage wears</a>
+                        <a class="dropdown-item" href="#">Sport wear</a>
+                        <a class="dropdown-item" href="#">Pyjamas</a>
+                        <a class="dropdown-item" href="#">Slippers</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="search-bar header__searchbar">
+            <input class="header__searchbar__input" type="text" placeholder="Search" > <button class="header__searchbar__btn" type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="header__language dropdown language-currency">
+            <a href="#">
+                <img src="icons/uk.png" alt="United Kingdom"> EN/Currency
+            </a>
+        </div>
+        <div class="cart">
+             <img src="icons/Frame 24.png" alt=""><p>2</p>
+        </div>
+    </header>
+    <main>
+        <div class="simple-scroll">
+            <ul>
+             <li>Home  <i  class="fa">&#xf105;</i></li>
+             <li>Kids  <i  class="fa">&#xf105;</i> </li>
+             <li>shoes  <i  class="fa">&#xf105;</i> </li>
+             <li>Sneakers   </li>
+            </ul>
+         </div>
+         <div class="first">
+            <div class="specific_product">
+                <div class="image_and_social_medias">
+                    <img class="img1" src="img/Burberry_Shine.png" alt="">
+                    <div class="images">
+                        <img src="img/Burberry_Shine.png" alt="">
+                        <img src="img/Burberry_Shine.png" alt="">
+                        <img src="img/shoe.png" alt="">
+                        <img src="img/shoe.png" alt="">
+                    </div>
+                    <div class="social_medias">
+                   <p><span class="nowrap">share this product</span></p>
+                   <div class="social_media_icons">
+                    <i style="font-size:24px" class="fa">&#xf16d;</i>
+                    <i style="font-size:24px" class="fa">&#xf232;</i>
+                    <i style="font-size:24px" class="fa">&#xf099;</i>
+
+                   </div>
+                    </div>
+                </div>
+
+                <div class="product_desc">
+              <div class="bubbery_shine">
+                <h1><span class="nowrap">Burberry shine</span></h1>
+                <i class="fa fa-heart-o" ></i> 
+              </div>
+              <p>Brand:&nbsp;&nbsp;&nbsp;FENDI</p>
+              <hr>
+              <div class="dollars"><p>$150</p><p>$300</p><p>-50%</p></div>
+              <p class="fiftyunits">50 units left</p>
+              <p class="shipping">+ Shipping fee may vary on location</p>
+              <p class="rate"><span style="color: yellow;" class="fa fa-star"></span>&nbsp;1k+rating</p>
+              <hr style="width: 450px;">
+
+              <div class="qty-desc"><p>Quantity:&nbsp;&nbsp;&nbsp;</p><div class="quantity"><button>-</button><p>1</p><button>+</button></div></div>
+              <div class="size">Size:&nbsp;&nbsp;<div class="psize"><p>20</p><p>25</p><p>32</p><p>37</p></div><p id="see">See all size guides</p></div>
+              <div class="color">Color:&nbsp;&nbsp;<div class="color_items">
+                <div><div class="rose"></div></div>
+                <div><div class="blue"></div></div>
+                <div><div class="red"></div></div>
+                <div><div class="black"></div></div>
+              </div>
+            </div>
+            <div class="btns"><button><img src="icons/bag-2.png" alt=""><p>Add to cart </p></button><button>Buy now</button></div>
+            <p class="pickup">Pickup & Pay on collection available</p>
+                </div>
+            </div>
+            <div class="deliver_returns">
+                <h1>Delivery & Returns</h1>
+                <hr>
+            <div class="location">
+                <label for="">Location</label>
+                <select name="" id="" >
+                    <option value="Location" selected>location</option>
+                </select>
+                <select name="" id="">
+                    <option value="sublocation" selected>sublocation</option>
+                </select>
+            </div>
+            <div class="delivery">
+                <img src="icons/iconoir_delivery-truck.png" alt="">
+                <div class="delivery_description">
+                    <h3>Delivery</h3>
+                    <p><span class="nowrap">Estimated delivery time is 1-12 business days </span></p>
+                    <p><span class="nowrap">For Same-Day-Delivery: Please place your</span><br>order before 12pm</p>
+                    <p><span class="nowrap">Next-Day-Delivery: Orders placed after 12pm</span><br>will be delivered the next day.</p>
+                    <p><span class="nowrap"><strong>Note:</strong> Availability may vary by location</span></p>
+                </div>
+            </div>
+            <div class="return_policy">
+                <img src="icons/hugeicons_delivery-return-01.png" alt="">
+                <div class="delivery_policy">
+                    <h3>Return policy</h3>
+                    <p><span class="nowrap">Guaranteed 7-day return policy</span></p>
+                    <p><span class="nowrap">For details about return shipping options,</span> <br>please visit our Contact page</p>
+                </div>
+            </div>
+
+            </div>
+         </div>
+         <div class="second">
+            <div class="tabs">
+                <div class="tab active">Overview</div>
+                <div class="tab">Description</div>
+                <div class="tab">Warranty</div>
+                <div class="tab">Reviews</div>
+              </div>
+              <ul>
+                <li>Available in a wide range of colors, patterns, and patterns and themes to appeal to kids.</li>
+                <li>Rubber outsoles with good traction to prevent slips and falls.</li>
+                <li>Built-in arch support to help maintain healthy foot development.</li>
+                <li>Soft insoles and adequate padding to support growing feet.</li>
+              </ul>
+              <hr>
+              <div class="similar_items">
+                <h3 class="h3">Similar items you may like</h3>
+              <div class="latest-collections__carousel">
+                <div class="latest-collections__product">
+                    <!-- Product Card Component (repeatable) -->
+                    <div class="product-card">
+                        <div class="div1"> 
+                            <i   class="fa fa-heart-o"></i> 
+                            <img class="product-card__img" src="img/butlin.png">
+                            <p>In Stock</p>
+                        </div>
+                        <div class="div2"> 
+                        <div class="p1">kids</div>
+                        <p class="rating"><span class="nowrap"><span class="fa fa-star span2"></span>2K+ rating</span></p>
+                        </div> 
+                        <div class="div3">
+                            <h3 class="product-card__h3">Butlin Blue</h3>
+                        <p  class="product-card__p">FENDI</p>
+                        </div>
+                        <div class="div4">
+                            <p class="price">$120</p>
+                        <button class="product-card__btn add-to-cart" data-product-id="1" data-product-name="French Kiss Bag" data-product-price="500">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="latest-collections__product">
+                    <!-- Product Card Component (repeatable) -->
+                    <div class="product-card">
+                        <div class="div1"> 
+                            <i class="fa fa-heart-o"></i> 
+                            <img class="product-card__img" src="img/pink_chery.png">
+                            <p>In Stock</p>
+                        </div>
+                        <div class="div2"> 
+                        <p class="p1">kids</p>
+                        <p class="rating"><span class="nowrap"><span class="fa fa-star span2"></span>2K+ rating</span></p>
+                        </div> 
+                        <div class="div3">
+                            <h3 class="product-card__h3">Pink cherry</h3>
+                        <p  class="product-card__p">FENDI</p>
+                        </div>
+                        <div class="div4">
+                            <p class="price">$180</p>
+                        <button class="product-card__btn add-to-cart" data-product-id="1" data-product-name="French Kiss Bag" data-product-price="500">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+         </div>
+
+
+
+
+
+    </main>
+
+    
+    
+
+    <footer>
+        <div class="description">
+            <img src="icons/Group.png" alt="">
+            <div class="about">
+                <h3>About</h3>
+                <p>About us</p>
+                <p>News & Blogs</p>
+                <p>Location</p>
+            </div>
+            <div class="products">
+                <h3>Products</h3>
+                <p>Pricing</p>
+                <p>Store</p>
+                <p>Features</p>
+            </div>
+            <div class="discover">
+                <h3>Discover</h3>
+                <p>Contact Us</p>
+                <p>Customers</p>
+                <p>Affilates</p>
+            </div>
+        </div>
+        <div class="social_medias">
+            <img src="icons/insta.png" alt="">
+            <img src="icons/whatsapp.png" alt="">
+            <img src="icons/x.png" alt="">
+        </div>
+    </footer>
+</body>
